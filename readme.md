@@ -1,0 +1,2 @@
+- most popular engine is v8 engine
+- nodejs is a runtime environment for javascript
