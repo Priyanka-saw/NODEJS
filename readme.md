@@ -8,3 +8,14 @@
 - file handling : to perform operations on files
 
 - fs : file system : this functionality gives in nodejs only not in javascript
+
+- url : Uniform Resource Locator
+- for example :https://priyanka-saw.github.io/Portfolio/
+              protocol: 
+              Hypertext
+              Transfer
+              Protocol
+              Secure
+    
+    priyanka-saw.github.io/Portfolio/
+    Domain - User Friendly Name of IP Address of my serverz
