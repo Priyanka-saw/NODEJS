@@ -19,3 +19,15 @@
     
     priyanka-saw.github.io/Portfolio/
     Domain - User Friendly Name of IP Address of my serverz
+
+    - http methods
+    Get- when we want to get some data from the server
+    post - when we want to send and mutate some data in server
+    put 
+    patch
+    delete
+
+
+
+    <!-- Express is a framework -->
+    

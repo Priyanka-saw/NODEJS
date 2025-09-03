@@ -8,7 +8,7 @@ const myServer = http.createServer((req, res) => {
 
     if(req.url === '/favicon.io') return res.end();
 
-    const log = `${Date.now()}: ${req.url} New Request Recevied\n`;
+    const log = `${Date.now()}: ${req.method} New Request Recevied\n`;
 
     const myUrl = url.parse(req.url, true);
     console.log(myUrl);
@@ -17,7 +17,7 @@ const myServer = http.createServer((req, res) => {
 
         switch (myUrl.pathname) {
             case '/':
-                res.end("HomePage");
+                if(req.method === 'GET') res.end('HomePage')
                 break;
             case '/about':
                 const username = myUrl.query.myname;
@@ -28,6 +28,14 @@ const myServer = http.createServer((req, res) => {
                  case '/search':
                     const search = myUrl.query.search_query;
                     res.end('here are the result for the javascripts' + search);
+
+                    case '/Signup':
+                        if(req.method === 'GET') res.end("This is a signup form");
+                            else if(req.method === "POST")
+                            {
+                                // DB QUERY
+                                res.end('Sucess')
+                            }
 
             default: res.end("404 not found");
 
