@@ -27,7 +27,12 @@
     patch
     delete
 
-
-
     <!-- Express is a framework -->
-    
+    - app is an instance of express
+    - Method is an HTTP request method , in lowercase
+    - Path is a path on the server 
+    - HANDLER is the functions executed when the routes is matched
+    - Syntex app.method(path, Handler )
+
+- Express ginving a structure to the code and a maintainable ot the code and giving the most used functionalitity that can used
+instead of using http we can use it expree 
