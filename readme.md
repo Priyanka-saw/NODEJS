@@ -34,5 +34,25 @@
     - HANDLER is the functions executed when the routes is matched
     - Syntex app.method(path, Handler )
 
-- Express ginving a structure to the code and a maintainable ot the code and giving the most used functionalitity that can used
-instead of using http we can use it expree 
+- Express giving a structure to the code and a maintainable at the code and giving the most used functionalitity that can used
+  instead of using http we can use it in express
+
+
+- Versioning
+- ^4.18.2
+ - 1st part -> 4
+ - 2nd part -> 18
+ - 3rd part -> 2
+
+ - 3rd part (last part) - Minor Fixes (Optionals)
+ - latest -> 4.18.2
+
+ - 2nd part - Recommended Bug Fix (Security Bug)
+    - latest ->  4.19.1
+
+- 1st major Release - Major / Breaking Update
+- 5
+
+^(caret Symbol) - Install all Recommended and Minor Fixes Automatically 
+^4 it's fixe
+^5 it's fix 
