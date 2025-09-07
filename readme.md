@@ -56,3 +56,7 @@
 ^(caret Symbol) - Install all Recommended and Minor Fixes Automatically 
 ^4 it's fixe
 ^5 it's fix 
+
+
+Restfull api
+ - means following all the Http method and if we know that the css(client side server) is browser the we used to send json i.e is html formate it easily fetch the data 
