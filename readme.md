@@ -59,4 +59,9 @@
 
 
 Restfull api
- - means following all the Http method and if we know that the css(client side server) is browser the we used to send json i.e is html formate it easily fetch the data 
+ - means following all the Http method and if we know that the css(client side server) is browser then we used to send json i.e, html formate it easily to fetch the data 
+
+
+ - Postman 
+ - is a tool(utility tool) i,e helpful for api testing  and api documentations 
+- Built for teams, Postman makes it easy to collaborate, stay organized, and build secure, reliable APIs faster.
