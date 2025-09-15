@@ -5,8 +5,33 @@ const fs = require('fs');
 const app = express();
 const PORT = 8000;
 
-// middleware
+// middleware - plugin
+// take the value from frontend to backend
 app.use(express.urlencoded({extended:false}))
+
+app.use((req, res, next) =>{
+    console.log('hello from middleware 1');
+    // return res.json({message: "hello from middleware 1"})
+
+    fs.appendFile('log.txt', `\n New Request at ${new Date().toISOString()} : ${req.path} : ${req.method} : ${req.ip}`, (err, data) => {
+        if(err) console.log(err);
+    })
+    req.myName = "priyanka";
+    next();
+    
+});
+
+
+app.use((req, res, next) =>{
+    console.log('hello from middleware 2', req.myName);
+    // return res.end("hye");
+
+
+    next();
+    
+});
+
+
 
 // routes
 app.get('/users', (req, res) => {

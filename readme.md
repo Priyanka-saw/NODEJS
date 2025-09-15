@@ -65,3 +65,12 @@ Restfull api
  - Postman 
  - is a tool(utility tool) i,e helpful for api testing  and api documentations 
 - Built for teams, Postman makes it easy to collaborate, stay organized, and build secure, reliable APIs faster.
+
+- MiddleWare
+- it is just a function that run when the res and req executed
+
+- perform some following tasks
+- 1. execute any code 
+- 2. make any changes to the req, res object
+- 3. End the request- response cycle
+- 4. call the next middleware function in the stack
