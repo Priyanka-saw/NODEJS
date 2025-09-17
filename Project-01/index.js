@@ -2,8 +2,46 @@ const express = require('express')
 const users = require('./MOCK_DATA.json')
 const fs = require('fs');
 
+const mongoose = require('mongoose');
+const { type } = require('os');
+
 const app = express();
 const PORT = 8000;
+
+
+// connections
+mongoose.connect('mongodb://127.0.0.1:27017/priyanka-dev-1')
+.then(() => console.log('MongoDB connected'))
+.catch((err) => console.log('mongo Error', err));
+
+// Schema
+const userSchema = new mongoose.Schema({
+    firstName: {
+        type: String,
+        required: true,
+    },
+    lastName: {
+        type: String,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+
+    },
+    jobTitle: {
+        type: String,
+    },
+    gender: {
+        type: String,
+    }
+})
+
+// Model
+const User = mongoose.model('User', userSchema);
+
+
+
 
 // middleware - plugin
 // take the value from frontend to backend
@@ -57,7 +95,7 @@ app.get('/api/users', (req, res) => {
 app.route('/api/users/:id').get((req, res) => {
     const id = Number(req.params.id);
     const user = users.find((user) => user.id === id);
-    if(!user) return res.status(404).json({message: "User Not Found"});
+    if (!user) return res.status(404).json({ message: "User Not Found" });
     return res.json(user);
 })
     .patch((req, res) => {

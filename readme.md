@@ -104,3 +104,18 @@
 - 403 forbidden (login but try to payment)
 
 ## nodemon - for automatic stating the server
+
+## MongoDB
+-  storage, retrieval, and management ke liye use hota hai
+- MongoDB is an open source, document-oriented, NoSql database whose data is stored in an organized format
+- No-Sql Document based database
+- it strong support for aggregation pipes
+- works on BJSON(Binary Javascript Object Notation) format
+- Best for Node Applications
+
+
+- JSON files are written in text format.
+- BSON files are written in binary.
+
+## mongoose
+- it is a package, we can connect to the mongodb using nodejs
