@@ -119,3 +119,5 @@
 
 ## mongoose
 - it is a package, we can connect to the mongodb using nodejs
+- Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. 
+- It provides a schema-based solution to model and structure data, bridging the gap between the application and the MongoDB database
