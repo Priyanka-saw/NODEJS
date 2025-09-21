@@ -103,7 +103,7 @@
 - 402 payment requird
 - 403 forbidden (login but try to payment)
 
-## nodemon - for automatic stating the server
+### nodemon - for automatic stating the server
 
 ## MongoDB
 -  storage, retrieval, and management ke liye use hota hai
@@ -121,3 +121,24 @@
 - it is a package, we can connect to the mongodb using nodejs
 - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. 
 - It provides a schema-based solution to model and structure data, bridging the gap between the application and the MongoDB database
+
+
+# MVC (Model View Controller)
+
+- Client (User) → Routes
+
+- The user makes a request (GET, POST, PUT, DELETE) to a specific route.
+Routes → Controllers
+
+- The route forwards the request to the appropriate controller function.
+Controllers → Models
+
+- The controller processes the request and interacts with the database using models.
+Models → Database
+
+- The model defines the structure of data and performs database operations.
+Database → Models → Controllers → Routes → Client
+
+- The retrieved or updated data flows back through the same chain and returns a response to the user.
+
+#### Client → Route → Controller → Model → Database → Model → Controller → Route → Client
