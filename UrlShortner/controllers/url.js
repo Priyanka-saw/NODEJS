@@ -31,6 +31,7 @@ async function handleRedirectUrl(req, res) {
 
     try {
         const entry = await URL.findOneAndUpdate(
+            
             { shortId },
             { $push: { visitHistory: { timestamps: Date.now() } } },
             { new: true }
