@@ -142,3 +142,7 @@ Database → Models → Controllers → Routes → Client
 - The retrieved or updated data flows back through the same chain and returns a response to the user.
 
 #### Client → Route → Controller → Model → Database → Model → Controller → Route → Client
+
+## Server side rendering
+### ejs
+- Embedded JavaScript templating.
