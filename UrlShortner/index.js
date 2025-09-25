@@ -9,6 +9,9 @@ const app = express();
 
 const PORT = 8001;
 
+app.set('view engine', 'ejs');  
+
+
 app.use(express.json()); // <-- Move this before routes
 
 connectDB('mongodb://localhost:27017/urlshortner').then(() => console.log("DB Connected")
