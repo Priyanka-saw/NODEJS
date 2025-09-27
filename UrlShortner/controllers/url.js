@@ -18,7 +18,9 @@ async function handleGenerateShortUrl(req, res) {
             visitHistory: [],
         });
 
-        return res.json({ id: shortId });
+        return res.render('home', {
+           shortId: shortId
+        });
     } catch (err) {
         console.error("Error creating short URL:", err.message);
         return res.status(500).json({ error: "Internal Server Error" });
@@ -31,9 +33,8 @@ async function handleRedirectUrl(req, res) {
 
     try {
         const entry = await URL.findOneAndUpdate(
-            
             { shortId },
-            { $push: { visitHistory: { timestamps: Date.now() } } },
+            { $push: { visitHistory: { visitedAt: new Date() } } },
             { new: true }
         );
 
