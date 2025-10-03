@@ -4,6 +4,7 @@ const { connectDB } = require('./connect');
 const urlRoutes = require('./routes/url');
 const staticRoute = require('./routes/staticRouter');
 const { handleRedirectUrl } = require('./controllers/url');
+const userRoutes = require('./routes/user');
 
 const app = express();
 const PORT = 8001;
@@ -15,8 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.set('views', path.resolve('./views'));
 
-app.use('/', staticRoute);
 app.use('/url', urlRoutes);
+app.use('/user', userRoutes);
+app.use('/', staticRoute);
 
 connectDB('mongodb://localhost:27017/urlshortner').then(() => console.log('DB Connected'));
 
