@@ -146,3 +146,26 @@ Database → Models → Controllers → Routes → Client
 ## Server side rendering
 ### ejs
 - Embedded JavaScript templating.
+
+# Authentication
+ - there is two patterns
+ - 1. Statefull (Which maintain state or data or serer side)
+ - client through server side uing username and password (that should we uniquie)
+
+ #### how to transfer uid(unique id)
+ - client through server side using cookies, responses, header(api mostly used)
+ - it means we can send uid in the form of 3 ways 
+
+ ### how the express flow
+ - client through end point route using authentication middleware 
+ - i,e checks for cookies, value or uid if valid, calls next() else rejects the request                     
+
+ ## the way authentication works
+
+ - 2. Stateless
+ - removing the state
+ - the token/ id is created for the user , kept the data in it, then locked it, so that people can read it but cannot read it 
+  - for that purpose we can use it JWT
+
+  ### jwt (json web token)
+  - A JSON Web Token (JWT) is a secure way to send information between a client and a server. It is mainly used in web applications and APIs to verify users and prevent unauthorized access. A JWT is JSON data secured with a cryptographic signature.
