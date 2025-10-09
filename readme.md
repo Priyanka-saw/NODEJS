@@ -169,3 +169,14 @@ Database → Models → Controllers → Routes → Client
 
   ### jwt (json web token)
   - A JSON Web Token (JWT) is a secure way to send information between a client and a server. It is mainly used in web applications and APIs to verify users and prevent unauthorized access. A JWT is JSON data secured with a cryptographic signature.
+
+  ## Cookies
+ - Cookies are small data that are stored on a client side and sent to the client along with server requests.
+
+ - cookies are made by the server 
+ - attached domain
+ - domain : we set domain
+ - expireation: that can expire
+ 
+ <!-- bearer Authentication -->
+ https://swagger.io/docs/specification/v3_0/authentication/bearer-authentication/ [bearer_authentication]
