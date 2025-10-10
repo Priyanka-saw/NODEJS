@@ -15,13 +15,14 @@ const urlSchema = new mongoose.Schema({
             visitedAt: { type: Date, default: Date.now }
         }
     ],
-    createdBy:{
+    
+    createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user',
         required: true,
     }
-}, 
-{ timestamps: true }
+},
+    { timestamps: true }
 );
 
 const URL = mongoose.model('URL', urlSchema);

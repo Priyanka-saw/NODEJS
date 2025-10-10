@@ -180,3 +180,41 @@ Database → Models → Controllers → Routes → Client
  
  <!-- bearer Authentication -->
  https://swagger.io/docs/specification/v3_0/authentication/bearer-authentication/ [bearer_authentication]
+
+
+ ## Authentication and Authorization
+
+ - Authentication = Identity verification
+ - Authorization = Access permission
+
+ ### Authentication
+
+- Meaning:
+  - It is the process of verifying the user’s identity — checking who you are.
+
+- Example:
+   - When you log in to a website using a username and password, the system checks if your details are correct.
+  If correct → you are authenticated.
+
+- Common methods:
+
+  - Username & Password
+
+  - OTP (One-Time Password)
+
+  - Fingerprint / Face ID
+ 
+ ### Authorization
+
+- Meaning:
+  - It is the process of checking what you can do after you are authenticated — deciding what you are allowed to access.
+
+- Example:
+  - After logging in,
+
+  - A normal user can view data
+
+  - An admin can add or delete users
+
+   - That’s authorization — deciding your permissions.
+
